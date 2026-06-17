@@ -46,12 +46,29 @@ title: People
 </div>
 
 
-## Students
+## Graduate Students
 
 <div class="people-grid">
-{% for person in site.data.people.students %}
+{% for person in site.data.people["Graduate students"] %}
   <div class="person-card">
-    <img src="{{ person.img }}" alt="{{ person.name }}">
+    {% if person.img %}
+      <img src="{{ person.img }}" alt="{{ person.name }}">
+    {% endif %}
+    <h3>{{ person.name }}</h3>
+    <p>{{ person.role }}</p>
+  </div>
+{% endfor %}
+</div>
+
+
+## Undergraduate Students
+
+<div class="people-grid">
+{% for person in site.data.people["Undergraduate students"] %}
+  <div class="person-card">
+    {% if person.img %}
+      <img src="{{ person.img }}" alt="{{ person.name }}">
+    {% endif %}
     <h3>{{ person.name }}</h3>
     <p>{{ person.role }}</p>
   </div>
