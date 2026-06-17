@@ -1,7 +1,6 @@
 ---
 layout: page
 title: People
-nav_exclude: true
 ---
 
 ## Principal Investigator
