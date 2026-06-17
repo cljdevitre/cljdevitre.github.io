@@ -353,11 +353,11 @@ a.navbar-item.is-active {
         }
     }
 }
-
 /* ======================================
    PEOPLE PAGE STYLES
    ====================================== */
 
+/* Grid for students and others */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -365,40 +365,45 @@ a.navbar-item.is-active {
     margin-top: 1.5rem;
 }
 
+/* Generic card */
 .person-card {
     text-align: center;
     transition: all 0.2s ease;
 }
 
+/* Hover effect */
 .person-card:hover {
     transform: translateY(-5px);
 }
 
+/* Default images */
 .person-card img {
     width: 140px;
     height: 140px;
     object-fit: cover;
-    border-radius: 50%; /* change to 8px if you want square */
+    border-radius: 50%; /* circular like Google Sites */
     margin-bottom: 0.75rem;
 }
 
+/* Name */
 .person-card h3 {
     margin: 0.5rem 0 0.25rem;
     font-size: 1.1rem;
 }
 
+/* Role text */
 .person-card p {
     margin: 0;
     font-size: 0.9rem;
-    color: #7a7a7a; /* matches your theme text color */
+    color: #7a7a7a;
 }
 
-/* Section spacing like the Google Sites layout */
+/* Section spacing */
 #page-section h2 {
     margin-top: 2.5rem;
 }
 
-/* Optional: make layout tighter on mobile */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .people-grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -411,26 +416,65 @@ a.navbar-item.is-active {
     }
 }
 
-/* Center single PI */
+/* ======================================
+   PRINCIPAL INVESTIGATOR (FEATURED CARD)
+   ====================================== */
+
+/* Center the PI */
 .people-center {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
 
-/* Social icons row */
-.person-links {
-    margin-top: 0.5rem;
+/* Make PI card bigger and nicer */
+.people-center .person-card {
+    max-width: 300px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
 }
 
+/* Bigger PI photo */
+.people-center .person-card img {
+    width: 180px;
+    height: 180px;
+}
+
+/* Larger PI name */
+.people-center .person-card h3 {
+    font-size: 1.3rem;
+}
+
+/* Larger PI role text */
+.people-center .person-card p {
+    font-size: 1rem;
+}
+
+/* Slight hover boost */
+.people-center .person-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* ======================================
+   SOCIAL ICONS
+   ====================================== */
+
+.person-links {
+    margin-top: 0.75rem;
+}
+
+/* Icon styling */
 .person-links a {
-    margin: 0 0.3rem;
-    font-size: 1.2rem;
-    color: #555;
+    margin: 0 0.4rem;
+    font-size: 1.3rem;
+    color: #444;
     transition: all 0.2s ease;
 }
 
+/* Hover effect for icons */
 .person-links a:hover {
-    color: black;
-    transform: scale(1.2);
+    color: #000;
+    transform: scale(1.15);
 }
