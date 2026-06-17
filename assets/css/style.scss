@@ -410,3 +410,27 @@ a.navbar-item.is-active {
         height: 110px;
     }
 }
+
+/* Center single PI */
+.people-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Social icons row */
+.person-links {
+    margin-top: 0.5rem;
+}
+
+.person-links a {
+    margin: 0 0.3rem;
+    font-size: 1.2rem;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+.person-links a:hover {
+    color: black;
+    transform: scale(1.2);
+}

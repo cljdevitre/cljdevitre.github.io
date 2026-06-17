@@ -1,10 +1,12 @@
-faculty:
+Principal Investigator:
   - name: Charlotte LJ Devitre
-    role: Assistant Professor
+    role: Assistant Professor, EES
     img: /assets/images/Headshot_CLJD.jpg
-    url: https://cljdevitre.github.io
+    google_scholar: https://scholar.google.com/...
+    linkedin: https://linkedin.com/in/...
+    bluesky: https://bsky.app/profile/...
 
-students:
+Graduate students:
   - name: X
     role: PhD Student
     img: 
