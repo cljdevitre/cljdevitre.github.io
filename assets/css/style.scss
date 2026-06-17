@@ -353,3 +353,60 @@ a.navbar-item.is-active {
         }
     }
 }
+
+/* ======================================
+   PEOPLE PAGE STYLES
+   ====================================== */
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.person-card {
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-5px);
+}
+
+.person-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; /* change to 8px if you want square */
+    margin-bottom: 0.75rem;
+}
+
+.person-card h3 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.1rem;
+}
+
+.person-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7a7a7a; /* matches your theme text color */
+}
+
+/* Section spacing like the Google Sites layout */
+#page-section h2 {
+    margin-top: 2.5rem;
+}
+
+/* Optional: make layout tighter on mobile */
+@media (max-width: 768px) {
+    .people-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .person-card img {
+        width: 110px;
+        height: 110px;
+    }
+}

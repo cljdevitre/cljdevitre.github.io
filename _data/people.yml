@@ -1,0 +1,13 @@
+faculty:
+  - name: Charlotte LJ Devitre
+    role: Assistant Professor
+    img: /assets/images/Headshot_CLJD.jpg
+    url: https://cljdevitre.github.io
+
+students:
+  - name: X
+    role: PhD Student
+    img: 
+  - name: Y
+    role: MSc Student
+    img: 
