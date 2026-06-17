@@ -46,8 +46,6 @@ plugins:
   - jekyll-admin
   - jekyll-feed
 
-# Permalink
-permalink: "blog/:VolCan Lab"
 
 # Compress
 compress_html:
